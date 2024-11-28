@@ -36,6 +36,9 @@ config("vulkan_headers_config") {
   if (is_ios) {
     defines += [ "VK_USE_PLATFORM_IOS_MVK" ]
   }
+  if (is_ohos) {
+    defines += [ "VK_USE_PLATFORM_OHOS" ]
+  }
   if (defined(is_ggp) && is_ggp) {
     defines += [ "VK_USE_PLATFORM_GGP" ]
   }
