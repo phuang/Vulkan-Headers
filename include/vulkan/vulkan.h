@@ -92,6 +92,10 @@
 #endif
 
 
+#ifdef VK_USE_PLATFORM_OHOS
+#include "vulkan_ohos.h"
+#endif
+
 #ifdef VK_ENABLE_BETA_EXTENSIONS
 #include "vulkan_beta.h"
 #endif
